@@ -1,0 +1,12 @@
+{
+  "name": "whatsapp_script",
+  "version": "1.0.0",
+  "description": "Send movie's or series scripts via Whatsapp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["whatsapp", "script", "travazap"],
+  "author": "https://github.com/VictorManduca",
+  "license": "MIT"
+}
