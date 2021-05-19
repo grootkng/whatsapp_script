@@ -1,34 +1,18 @@
-// const { sherekMovieScript } = require("./scripts/sherek.js")
+const { Client } = require('whatsapp-web.js')
+const qrcode = require('qrcode-terminal')
 
-// const sherekMovieScript = 'alozinho meu'
-
-// function messageToSend() {
-//   const MAX_INTERVAL = 250
-//   const LINES = sherekMovieScript.split("\n")
-//   let line = 0
-
-//   setInterval(() => {
-//     if (line >= LINES.length) {
-//       return
-//     }
-
-//     if (LINES[line].trim() != "") {
-//       LINES[line]
-//     }
-
-//     line++
-//   }, MAX_INTERVAL)
-// }
+const { sherekMovieScript } = require("./scripts/sherek.js")
 
 function main() {
-  const qrcode = require('qrcode-terminal')
-  const { Client } = require('whatsapp-web.js')
   const client = new Client()
   client.initialize()
 
   client.on('qr', qr => qrcode.generate(qr, { small: true }))
   client.on('ready', _ => console.log('Ready to start'))
-  client.on('message', msg => msg.reply('teste'))
+  client.on('message', msg => {
+    const LINES = sherekMovieScript.split('\n')
+    LINES.map(line => line.trim() != '' ? msg.reply(line) : '')
+  })
   client.on('disconnected', reason => console.log('Logged out', reason))
 }
 
