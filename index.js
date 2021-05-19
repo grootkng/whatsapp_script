@@ -4,6 +4,7 @@ function main() {
     const LINES = sherekMovieScript.split('\n')
     const EVENT = new InputEvent('input', { bubbles: true })
     const TEXT_BOX = document.querySelector('div._2_1wd[data-tab="6"]')
+    const MAX_INTERVAL = 250
     let line = 0
 
     setInterval(() => {
@@ -20,5 +21,5 @@ function main() {
         }
 
         line++
-    }, 250)
+    }, MAX_INTERVAL)
 }
