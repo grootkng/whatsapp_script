@@ -4,11 +4,11 @@
 ## Disclaimer :warning:
 I'm not responsible for any damage that this app can cause to anybody. I did it just for fun and tested it with a friend
 
-## Demo
+## Demo :clapper:
 When you run `npm run start` in the project you'll receive the QR code to connect your Whatsapp account  
 
-![Print QR Code](https://github.com/VictorManduca/whatsapp_script/blob/main/img/qr_print.PNG)
+<p align="center"><img src="https://github.com/VictorManduca/whatsapp_script/blob/main/img/qr_print.PNG"></p>
 
 Connect your Whatsapp account and just wait for a new message from anyone, and there's it :sunglasses:
 
-![Use case](https://github.com/VictorManduca/whatsapp_script/blob/main/img/send_print.PNG)
+<p align="center"><img src="https://github.com/VictorManduca/whatsapp_script/blob/main/img/send_print.PNG"></p>
