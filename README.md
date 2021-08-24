@@ -1,4 +1,4 @@
-<h1 align="center"> <img src="https://image000.flaticon.com/png/512/220/220236.png" width="34" height="34"> Whatsapp Script</h1>
+<h1 align="center">Whatsapp Script</h1>
 <p align="center">Send movie's or series scripts via Whatsapp</p>
 
 ## Disclaimer :warning:
